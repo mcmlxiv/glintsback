@@ -43,13 +43,10 @@ app.use(
 );
 //MongoDB
 mongoose
-  .connect(
-    "mongodb+srv://mcmlxiv:welcome9@todos.pxd2d.mongodb.net/Todos?retryWrites=true&w=majority",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
-  )
+  .connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then((response: Mongoose) => console.log(response + "connected!"));
 
 //Setting up GQL
