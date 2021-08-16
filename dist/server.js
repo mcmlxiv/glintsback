@@ -34,7 +34,7 @@ app.use(cors(), bodyParser.json(), expressJwt({
 }));
 //MongoDB
 mongoose
-    .connect("mongodb+srv://mcmlxiv:welcome9@todos.pxd2d.mongodb.net/Todos?retryWrites=true&w=majority", {
+    .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
