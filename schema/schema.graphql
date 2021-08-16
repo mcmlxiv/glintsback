@@ -1,0 +1,59 @@
+type Query{
+    jobList:[JobList]
+    user(id:ID!):User
+    users:[User]
+}
+
+type JobList{
+    id:ID!
+    description:String
+    title:String
+    startDate:String
+    endDate:String
+    company:String
+    userId:String
+
+}
+type User{
+    id:ID!
+email:String,
+password:String,
+    firstName:String,
+    lastName:String,
+    Age:String,
+    JobTitle:String,
+    City:String,
+    jobList:[JobList]
+
+}
+
+
+type Mutation{
+    createJob(input:JobInput):JobList
+    deleteJob(id:ID):JobList
+    updateJob(input:JobInput):JobList
+    createUser(input:UserInput):User
+    deleteUser(id:ID):User
+    updateUser(input:UserInput):User
+}
+
+input JobInput{
+    id:ID!,
+    description:String,
+    title:String,
+    startDate:String,
+    endDate:String,
+    company:String,
+    userId:String,
+}
+
+input UserInput{
+    id:ID!,
+    email:String,
+    password:String,
+    firstName:String,
+    lastName:String,
+    age:String,
+    jobTitle:String,
+    city:String,
+}
