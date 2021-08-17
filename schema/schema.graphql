@@ -20,9 +20,9 @@ email:String,
 password:String,
     firstName:String,
     lastName:String,
-    Age:String,
-    JobTitle:String,
-    City:String,
+    age:String,
+    jobTitle:String,
+    city:String,
     jobList:[JobList]
 
 }
