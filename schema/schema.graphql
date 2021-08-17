@@ -23,7 +23,7 @@ password:String,
     age:Int,
     profileImg:String,
     jobTitle:String,
-    city:String,
+    location:String,
     jobList:[JobList]
 
 }
@@ -57,5 +57,5 @@ input UserInput{
     age: Int,
     profileImg:String,
     jobTitle:String,
-    city:String,
+    location:String,
 }

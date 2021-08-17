@@ -43,7 +43,7 @@ interface createUser {
     lastName: String;
     age: Number;
     jobTitle: String;
-    city: String;
+    location: String;
     profileImg: String;
   };
 }
@@ -99,7 +99,7 @@ const Mutation = {
       lastName: input.lastName,
       age: input.age,
       jobTitle: input.jobTitle,
-      city: input.city,
+      location: input.location,
       profileImg: input.profileImg,
     });
     return user.save();
