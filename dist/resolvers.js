@@ -63,7 +63,6 @@ const Mutation = {
             age: input.age,
             jobTitle: input.jobTitle,
             location: input.location,
-            profileImg: input.profileImg,
         });
         return user.save();
     },

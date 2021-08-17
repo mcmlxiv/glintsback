@@ -44,7 +44,6 @@ interface createUser {
     age: Number;
     jobTitle: String;
     location: String;
-    profileImg: String;
   };
 }
 //Mutate JSON data
@@ -100,7 +99,6 @@ const Mutation = {
       age: input.age,
       jobTitle: input.jobTitle,
       location: input.location,
-      profileImg: input.profileImg,
     });
     return user.save();
   },
