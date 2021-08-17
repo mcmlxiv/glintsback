@@ -1,6 +1,6 @@
 type Query{
     jobList:[JobList]
-    user(id:ID!):User
+    user(id:ID):User
     users:[User]
 }
 
@@ -20,7 +20,7 @@ email:String,
 password:String,
     firstName:String,
     lastName:String,
-    age:String,
+    age:Int,
     jobTitle:String,
     city:String,
     jobList:[JobList]
@@ -53,7 +53,7 @@ input UserInput{
     password:String,
     firstName:String,
     lastName:String,
-    age:String,
+    age: Int,
     jobTitle:String,
     city:String,
 }

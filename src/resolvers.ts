@@ -41,7 +41,7 @@ interface createUser {
     password: String;
     firstName: String;
     lastName: String;
-    age: String;
+    age: Number;
     jobTitle: String;
     city: String;
   };
