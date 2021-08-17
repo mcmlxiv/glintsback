@@ -5,7 +5,7 @@ type Query{
 }
 
 type JobList{
-    id:ID!
+    id:ID
     description:String
     title:String
     startDate:String
@@ -15,7 +15,7 @@ type JobList{
 
 }
 type User{
-    id:ID!
+    id:ID
 email:String,
 password:String,
     firstName:String,
@@ -38,7 +38,7 @@ type Mutation{
 }
 
 input JobInput{
-    id:ID!,
+    id:ID,
     description:String,
     title:String,
     startDate:String,
@@ -48,7 +48,7 @@ input JobInput{
 }
 
 input UserInput{
-    id:ID!,
+    id:ID,
     email:String,
     password:String,
     firstName:String,
