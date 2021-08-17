@@ -8,7 +8,7 @@ const jobListSchema = new Schema(
     company: String,
     title: String,
     startDate: String,
-    endDate: Boolean,
+    endDate: String,
     userId: String,
   },
   {
