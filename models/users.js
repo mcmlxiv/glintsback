@@ -12,7 +12,12 @@ const userSchema = new Schema(
     age: Number,
     jobTitle: String,
     location: String,
-
+    showEmail: Boolean,
+    showFirstName: Boolean,
+    showLastName: Boolean,
+    showLocation: Boolean,
+    showJobTitle: Boolean,
+    showAge: Boolean,
     jobList: {
       id: String,
       description: String,

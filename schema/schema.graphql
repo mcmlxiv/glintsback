@@ -21,7 +21,12 @@ password:String,
     firstName:String,
     lastName:String,
     age:Int,
-
+showEmail:Boolean,
+    showFirstName:Boolean,
+    showLastName:Boolean,
+    showLocation:Boolean,
+    showJobTitle:Boolean,
+    showAge:Boolean,
     jobTitle:String,
     location:String,
     jobList:[JobList]
@@ -55,7 +60,12 @@ input UserInput{
     firstName:String,
     lastName:String,
     age: Int,
-
     jobTitle:String,
     location:String,
+    showEmail:Boolean,
+    showFirstName:Boolean,
+    showLastName:Boolean,
+    showLocation:Boolean,
+    showJobTitle:Boolean,
+    showAge:Boolean,
 }

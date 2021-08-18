@@ -63,6 +63,12 @@ const Mutation = {
             age: input.age,
             jobTitle: input.jobTitle,
             location: input.location,
+            showEmail: input.showEmail,
+            showFirstName: input.showFirstName,
+            showLastName: input.showLastName,
+            showLocation: input.showLocation,
+            showJobTitle: input.showJobTitle,
+            showAge: input.showAge,
         });
         return user.save();
     },
